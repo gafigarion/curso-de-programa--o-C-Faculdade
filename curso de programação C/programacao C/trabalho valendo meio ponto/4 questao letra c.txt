@@ -1,0 +1,1 @@
+na verdade nao uma se trata de variavel global e outra se trata de variavel local, int b do inicio e uma variavel global.

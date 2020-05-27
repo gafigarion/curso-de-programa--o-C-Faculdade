@@ -1,0 +1,1 @@
+ela e declarada como uma variavel global pois esta fora de todas a funcoes e por esse motivo pode ser enchergada por todo programa.

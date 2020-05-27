@@ -1,0 +1,1 @@
+sera impresso o resultado b=200 , b = 201 e b= 200 ,o programa principal chama a funcao funca que printa o valor de 200 depois incrementa mais um e printa novamente com valor 201, ao encerrar a funcao o programa printa novamente com valor inicial de 200.

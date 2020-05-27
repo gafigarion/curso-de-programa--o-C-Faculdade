@@ -1,0 +1,28 @@
+# Project: exercicio 11
+# Makefile created by Dev-C++ 5.5.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = "exercicio\ 11.o"
+LINKOBJ  = "exercicio 11.o"
+LIBS     = -L"C:/Arquivos de programas/Dev-Cpp/MinGW32/lib" -L"C:/Arquivos de programas/Dev-Cpp/MinGW32/mingw32/lib" -static-libstdc++ -static-libgcc
+INCS     = -I"C:/Arquivos de programas/Dev-Cpp/MinGW32/include"
+CXXINCS  = -I"C:/Arquivos de programas/Dev-Cpp/MinGW32/include" -I"C:/Arquivos de programas/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.7.2/include/c++"
+BIN      = "exercicio 11.exe"
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+"exercicio\ 11.o": exercicio\ 11.c
+	$(CC) -c "exercicio 11.c" -o "exercicio 11.o" $(CFLAGS)
